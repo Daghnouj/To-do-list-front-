@@ -1,0 +1,72 @@
+.tasks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.task-card mat-card-header {
+  background-color: #f4f4f4;
+  padding: 16px;
+}
+
+.task-card mat-card-content {
+  padding: 16px;
+}
+
+.task-card mat-card-actions {
+  padding: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  margin-right: 8px;
+}
+
+button.mat-raised-button {
+  font-weight: bold;
+}
+
+.completed {
+  color: green;
+}
+
+.task-list {
+  padding: 0;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.success-message mat-icon {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+/* .completed-task {
+  background-color: #d9ffd9;
+  text-decoration: line-through;
+  color: gray;
+} */
+.completed-task {
+  background-color: #e0f7e0;  /* Vert clair pour les tâches complètes */
+  border-left: 5px solid #4caf50;  /* Bordure verte pour les tâches complètes */
+}
+
+.completed-task .mat-card-actions button {
+  visibility: hidden; /* Cache le bouton "Mark as Completed" pour les tâches complètes */
+}
+
+.completed-task mat-icon {
+  color: #4caf50;  /* Change la couleur de l'icône de coche en vert */
+}
