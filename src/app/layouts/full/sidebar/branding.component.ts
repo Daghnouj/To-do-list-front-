@@ -6,7 +6,9 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
   template: `
-    <div class="branding">
+    <h1>To-Do-List</h1>
+
+    <!-- <div class="branding">
       <a [routerLink]="['/']">
         <img
           src="./assets/images/logos/logo.svg"
@@ -14,7 +16,7 @@ import { RouterModule } from '@angular/router';
           alt="logo"
         />
       </a>
-    </div>
+    </div> -->
   `,
 })
 export class BrandingComponent {
